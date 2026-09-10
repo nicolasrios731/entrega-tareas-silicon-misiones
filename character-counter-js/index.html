@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Caracteres - Silicon Misiones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <header class="header">
+      <h1>Contador de Caracteres</h1>
+      <p>Escribí tu texto y analizá las métricas en tiempo real.</p>
+    </header>
+
+    <div class="input-container">
+      <textarea id="texto" placeholder="Escribí o pegá tu texto acá..." rows="8"></textarea>
+      <button id="btn-limpiar" class="btn-limpiar">Limpiar texto</button>
+    </div>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span id="caracteres" class="stat-number">0</span>
+        <span class="stat-label">Caracteres</span>
+      </div>
+      <div class="stat-card">
+        <span id="palabras" class="stat-number">0</span>
+        <span class="stat-label">Palabras</span>
+      </div>
+      <div class="stat-card">
+        <span id="sinEspacios" class="stat-number">0</span>
+        <span class="stat-label">Sin espacios</span>
+      </div>
+      <div class="stat-card" id="card-restantes">
+        <span id="restantes" class="stat-number">280</span>
+        <span class="stat-label">Restantes (Límite: 280)</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
