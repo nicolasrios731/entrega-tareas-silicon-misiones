@@ -1,0 +1,93 @@
+:root {
+  --bg-primary: #000000;
+  --card-bg: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --accent-color: #0070f3;
+  --accent-gradient: linear-gradient(180deg, #fff 0%, #aaa 100%);
+  --border-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.next-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--card-bg);
+  padding: 36px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #222;
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  background-color: #1a1a1a;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
